@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #292F3F; /* Серый фон */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.6;
+}
+
+.auth-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form label {
+    width: 75px;
+    height: 22px;
+    top: 465px;
+    left: 191px;
+    color: #dadada;
+    text-align: left;
+}
+
+.auth-form input {
+    width: 273px;
+    height: 32px;
+    top: 493px;
+    left: 191px;
+    border: 1px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.auth-form button {
+    width: 273px;
+    height: 29px;
+    top: 551px;
+    left: 191px;
+    background-color: #42566C; /* Темно-синий цвет */
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-form button:hover {
+    background-color: #002244; /* Темнее синий при наведении */
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .auth-container {
+        padding: 15px;
+    }
+
+    .auth-form input, .auth-form button {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
